@@ -14,24 +14,26 @@ export default function Home() {
     >
       <Element
         name="top"
-        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-        xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
-        justify-between py-6 px-4 md:px-8 mx-6"
+        className="overflow-hidden rounded-[6px] top-8 sticky md:mx-auto z-50 
+  xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
+  justify-between py-6 px-4 md:px-8 mx-6"
       >
-        <Link href={"/"}>
-          {/*}
-        <Image
-          src={"/logo/logo.png"}
-          alt="logo"
-          width={1000}
-          height={1000}
-          className="w-28"
-        />
-        */}
-        </Link>
+        <div className="flex items-center">
+          <Link href={"/"}>
+            {/*}
+    <Image
+      src={"/logo/logo.png"}
+      alt="logo"
+      width={1000}
+      height={1000}
+      className="w-28"
+    />
+    */}
+          </Link>
+        </div>
 
-        {/* Navbar Links Full Width Fix */}
-        <div className="hidden md:flex flex-grow justify-center gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
+        {/* Navbar Links */}
+        <div className="hidden md:flex justify-center gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
           <Link href={"/showcase"} className="hover:text-blue-500">
             Testimonials
           </Link>
@@ -67,14 +69,14 @@ export default function Home() {
           <Link
             href={"/meeting"}
             className="px-8 py-0.5  
-          border-2 border-black 
-          dark:border-white '
-          uppercase 
-          hover:bg-[#abcbff] 
-          text-black 
-          transition duration-200 
-          text-sm 
-          hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+    border-2 border-black 
+    dark:border-white '
+    uppercase 
+    hover:bg-[#abcbff] 
+    text-black 
+    transition duration-200 
+    text-sm 
+    hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
           >
             Book a call
           </Link>
