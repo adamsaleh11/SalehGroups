@@ -5,7 +5,7 @@ import "./globals.css";
 const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SalehGroups",
+  title: "Saleh Software",
   description: "Grow your online presence with Saleh Groups",
 };
 
