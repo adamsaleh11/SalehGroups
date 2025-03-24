@@ -12,37 +12,37 @@ const services = [
     icon: "/images/s_6.png",
     title: "Web Design + Development",
     description:
-      "Take your business to the next level with our web design and development services",
+      "We design and develop fast, modern, and responsive websites tailored to your business needs.",
   },
   {
     icon: "/images/s_1.png",
     title: "AI & Automation Solutions",
     description:
-      "Get your website to the top of search engine results with our SEO services",
+      "Implement AI tools and automation workflows to streamline operations and boost efficiency.",
   },
   {
     icon: "/images/s_5.png",
     title: "SaaS & Cloud Solutions",
     description:
-      "Boost your brand's online presence with our social media marketing services",
+      "Build scalable SaaS platforms and cloud-based systems to power your digital infrastructure.",
   },
   {
     icon: "/images/s_3.png",
     title: "Digital Marketing",
     description:
-      "Interact with your customers and increase sales with our email marketing services",
+      "Drive traffic and engagement with targeted digital campaigns across multiple platforms.",
   },
   {
     icon: "/images/s_4.png",
     title: "Email Marketing",
     description:
-      "With our content creation services, we help businesses drive results",
+      "Launch high-converting email campaigns that nurture leads and increase customer retention.",
   },
   {
     icon: "/images/s_2.png",
     title: "Business Intelligence & Analytics",
     description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+      "Leverage data dashboards and analytics to make smarter, data-driven business decisions.",
   },
 ];
 
