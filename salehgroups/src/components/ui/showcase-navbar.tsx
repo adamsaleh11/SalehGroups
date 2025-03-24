@@ -35,6 +35,9 @@ const ShowcaseNavbar = () => {
         <Link href="/" className="hover:text-blue-500">
           Guarantees
         </Link>
+        <Link href={"/products"} className="hover:text-blue-500">
+          Products
+        </Link>
       </div>
 
       {/* Right Side CTA Buttons */}

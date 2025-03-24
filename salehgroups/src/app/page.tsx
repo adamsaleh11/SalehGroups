@@ -95,6 +95,9 @@ export default function Home() {
           >
             Guarantees
           </ScrollLink>
+          <Link href={"/products"} className="hover:text-blue-500">
+            Products
+          </Link>
         </div>
 
         <div className="flex items-center gap-x-4">
