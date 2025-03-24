@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const ShowcaseNavbar = () => {
@@ -40,16 +39,13 @@ xl:w-4/5
           hover:text-blue-500
           "
           >
-            Showcase
+            Testimonials
           </Link>
           <Link href="/" className="hover:text-blue-500">
             Services
           </Link>
           <Link href="/" className="hover:text-blue-500">
-            Process
-          </Link>
-          <Link href="/" className="hover:text-blue-500">
-            Guarentees
+            Guarantees
           </Link>
         </div>
       </div>

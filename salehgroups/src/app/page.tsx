@@ -5,8 +5,6 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { PiCheckBold } from "react-icons/pi";
-import { AnimatedBeamDemo } from "@/components/demos/animated-beam-demo";
-import { BoxRevealDemo } from "@/components/demos/box-reveal-demo";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 
 const services = [
@@ -89,13 +87,6 @@ export default function Home() {
             className="hover:text-blue-500"
           >
             Services
-          </ScrollLink>
-          <ScrollLink
-            to="process"
-            smooth={true}
-            className="hover:text-blue-500"
-          >
-            Process
           </ScrollLink>
           <ScrollLink
             to="guarantees"
