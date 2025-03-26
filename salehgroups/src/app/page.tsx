@@ -1,10 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { CoverDemo } from "@/components/demos/cover-demo";
 import { BoxReveal } from "@/components/magicui/box-reveal";
-import { PiCheckBold } from "react-icons/pi";
+import {
+  PiList as PiMenuBold,
+  PiX as PiXBold,
+  PiCheckBold,
+} from "react-icons/pi";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 
 const services = [
@@ -47,6 +52,12 @@ const services = [
 ];
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div
       className="overflow-clip 
@@ -76,7 +87,17 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Navbar Links */}
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMobileMenu}
+            className="text-2xl focus:outline-none"
+          >
+            {isMobileMenuOpen ? <PiXBold /> : <PiMenuBold />}
+          </button>
+        </div>
+
+        {/* Desktop Navbar Links */}
         <div className="hidden md:flex justify-center gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
           <Link href={"/showcase"} className="hover:text-blue-500">
             Testimonials
@@ -121,7 +142,53 @@ export default function Home() {
             Book a call
           </Link>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
+            <div className="flex flex-col items-center py-4 space-y-4 text-gray-700 font-medium">
+              <Link
+                href={"/showcase"}
+                className="hover:text-blue-500"
+                onClick={toggleMobileMenu}
+              >
+                Testimonials
+              </Link>
+              <ScrollLink
+                to="services"
+                smooth={true}
+                className="hover:text-blue-500"
+                onClick={toggleMobileMenu}
+              >
+                Services
+              </ScrollLink>
+              <ScrollLink
+                to="guarantees"
+                smooth={true}
+                className="hover:text-blue-500"
+                onClick={toggleMobileMenu}
+              >
+                Guarantees
+              </ScrollLink>
+              <Link
+                href={"/products"}
+                className="hover:text-blue-500"
+                onClick={toggleMobileMenu}
+              >
+                Products
+              </Link>
+              <a
+                href="tel:613-784-0342"
+                className="text-blue-500"
+                onClick={toggleMobileMenu}
+              >
+                (613)-784-0342
+              </a>
+            </div>
+          </div>
+        )}
       </Element>
+
       <main className="md:pb-10">
         <div
           className="absolute bottom-0 left-0 
