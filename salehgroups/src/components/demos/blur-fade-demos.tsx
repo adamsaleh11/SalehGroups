@@ -7,7 +7,7 @@ const works = [
     background: "bg-gray-200",
     imageUrl: "/images/YOSU.png",
     title: "Youth Ontario Sports Universe",
-    link: "https://yosu.vercel.app",
+    link: "https://yuso.vercel.app",
   },
 ];
 
