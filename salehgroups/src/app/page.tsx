@@ -87,8 +87,8 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
+        {/* Mobile Menu Toggle - Updated to align left */}
+        <div className="md:hidden absolute left-4 top-1/2 -translate-y-1/2">
           <button
             onClick={toggleMobileMenu}
             className="text-2xl focus:outline-none"
