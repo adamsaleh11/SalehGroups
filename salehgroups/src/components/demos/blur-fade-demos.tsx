@@ -9,6 +9,12 @@ const works = [
     title: "Youth Ontario Sports Universe",
     link: "https://yuso.vercel.app",
   },
+  {
+    background: "bg-gray-200",
+    imageUrl: "/images/QUARANCLASS.png",
+    title: "Barrhaven Quaran Teachings",
+    link: "https://syed-quaran-class.vercel.app",
+  },
 ];
 
 export function BlurFadeDemo() {
