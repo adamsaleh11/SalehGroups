@@ -15,6 +15,12 @@ const works = [
     title: "Barrhaven Quaran Teachings",
     link: "https://syed-quaran-class.vercel.app",
   },
+  {
+    background: "bg-gray-200",
+    imageUrl: "/images/fernandezfitness.png",
+    title: "Fernandez Performance",
+    link: "https://fernandezperformance.vercel.app",
+  },
 ];
 
 export function BlurFadeDemo() {
