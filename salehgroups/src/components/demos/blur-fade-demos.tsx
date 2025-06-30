@@ -18,8 +18,8 @@ const works = [
   {
     background: "bg-gray-200",
     imageUrl: "/images/fernandezperformance.png",
-    title: "Fernandez Performance",
-    link: "https://fernandezperformance.vercel.app",
+    title: "Fernandez Fitness",
+    link: "https://www.fernandezfitness.com",
   },
 ];
 
