@@ -21,6 +21,12 @@ const works = [
     title: "Fernandez Fitness",
     link: "https://www.fernandezfitness.com",
   },
+  {
+    background: "bg-gray-200",
+    imageUrl: "/images/falconecarpentry.png",
+    title: "Falcone Carpentry",
+    link: "https://falconecarpentry.vercel.app",
+  },
 ];
 
 export function BlurFadeDemo() {
