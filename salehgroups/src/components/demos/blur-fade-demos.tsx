@@ -25,7 +25,7 @@ const works = [
     background: "bg-gray-200",
     imageUrl: "/images/falconecarpentry.png",
     title: "Falcone Carpentry",
-    link: "https://www.falconefinecarpentry.com",
+    link: "https://falconecarpentry.vercel.app",
   },
 ];
 
